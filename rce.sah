@@ -1,0 +1,13 @@
+var $tc1 = _testcase("TC-1","lets get some code execution. ").start();
+
+_navigateTo("https://google.com");
+_selectWindow("/google/");
+$cmd_output1 = _execute("whoami" , true )
+	
+$cmd_output2 = _execute("ipconfig",true )
+
+_log("command output1 : "+ $cmd_output1);
+
+_log("command output2 : "+ $cmd_output2);
+
+$tc1.end();
